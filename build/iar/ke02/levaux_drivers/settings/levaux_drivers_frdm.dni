@@ -1,0 +1,84 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[PE_STARTUP]
+CPUTARGETTYPENAME=_ "Freescale Kinetis - Autodetect"
+jtag_numbits_pre_ir=_ "0"
+jtag_tap_num=_ "0"
+jtag_use_daisy_chain=_ "0"
+user_specified_daisy_chain=_ "0"
+USE_CYCLONEPRO_RELAYS=_ "0"
+CyclonePro_poweroffonexit=_ "0"
+CyclonePro_currentvoltage=_ "128"
+CyclonePro_PowerDownDelay=_ "250"
+CyclonePro_PowerUpDelay=_ "250"
+Multilink_PowerDownDelay=_ "250"
+Multilink_PowerUpDelay=_ "1000"
+USE_SWD=_ "1"
+IO_DELAY_CNT=_ "0"
+FREQ_FX=_ "4"
+FREQ_NORMAL=_ "0"
+FREQ_OSJTAG=_ "0"
+FREQ_CYCLONE=_ "3"
+FREQ_TRACELINK=_ "3"
+FREQ_LIGHTNING=_ "1"
+FREQ_OPENSDA=_ "3"
+RESET_DELAY=_ "0"
+PORT=_ "1"
+PORT_NAME_STRING=_ ""
+interface_selection=_ "7"
+SHOWDIALOG=_ "1"
+[Breakpoints]
+Count=0
+[DebugChecksum]
+Checksum=1441026217
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[JLinkDriver]
+CStepIntDis=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000000
+[Trace1]
+Enabled=0
+ShowSource=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\..\..\tests.cpp}.712.5" 0 0 1 "" 0 "" 0
+Count=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Aliases]
+A0=_ "E:\levaux\KEXX_DRV_LIB\src\drivers\ics\ics.h" "F:\levaux\kexx_drv_lib\src\drivers\ics\ics.h"
+Count=1
+SuppressDialog=0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1

@@ -1,0 +1,104 @@
+###############################################################################
+#                                                                             #
+#     IAR Assembler V7.50.2.10312/W32 for ARM 23/Apr/2017  21:18:32           #
+#     Copyright 1999-2015 IAR Systems AB.                                     #
+#                                                                             #
+#           Source file   =  F:\levaux\KEXX_DRV_LIB_OLD\src\cpu\crt0.s        #
+#           List file     =  F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\List\crt0.lst#
+#           Object file   =  F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\crt0.o#
+#           Command line  =  F:\levaux\KEXX_DRV_LIB_OLD\src\cpu\crt0.s        #
+#                            -OF:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj #
+#                            -s+ -M<> -w+ -r                                  #
+#                            -LF:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\List #
+#                            -t8 --cpu Cortex-M0+ --fpu None                  #
+#                                                                             #
+###############################################################################
+
+    1                           /*********************************************
+                                *********************************
+    2                           *
+    3                           * Freescale Semiconductor Inc.
+    4                           * (c) Copyright 2013 Freescale Semiconductor,
+                                 Inc.
+    5                           * ALL RIGHTS RESERVED.
+    6                           *
+    7                           **********************************************
+                                *****************************
+    8                           *
+    9                           * THIS SOFTWARE IS PROVIDED BY FREESCALE "AS
+                                 IS" AND ANY EXPRESSED OR
+   10                           * IMPLIED WARRANTIES, INCLUDING, BUT NOT
+                                 LIMITED TO, THE IMPLIED WARRANTIES
+   11                           * OF MERCHANTABILITY AND FITNESS FOR A
+                                 PARTICULAR PURPOSE ARE DISCLAIMED.
+   12                           * IN NO EVENT SHALL FREESCALE OR ITS
+                                 CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+   13                           * INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+                                 CONSEQUENTIAL DAMAGES
+   14                           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+                                 OF SUBSTITUTE GOODS OR
+   15                           * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+                                 BUSINESS INTERRUPTION)
+   16                           * HOWEVER CAUSED AND ON ANY THEORY OF
+                                 LIABILITY, WHETHER IN CONTRACT,
+   17                           * STRICT LIABILITY, OR TORT (INCLUDING
+                                 NEGLIGENCE OR OTHERWISE) ARISING
+   18                           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+                                 EVEN IF ADVISED OF
+   19                           * THE POSSIBILITY OF SUCH DAMAGE.
+   20                           *
+   21                           **********************************************
+                                *****************************//*!
+   22                           *
+   23                           * @file crt0.s
+   24                           *
+   25                           * @author Freescale
+   26                           *
+   27                           * @version 0.0.1
+   28                           *
+   29                           * @date Jun. 25, 2013
+   30                           *
+   31                           * @brief provide low level start up routine.
+                                 
+   32                           *
+   33                           **********************************************
+                                *********************************/
+   34                           
+   35                           ;         AREA   Crt0, CODE, READONLY      ;
+                                 name this block of code
+   36                             SECTION .noinit : CODE
+   37                           
+   38                                   EXPORT  __startup
+   39                           __startup
+   40    00000000 0020              LDR     r0,=0                   ;
+                                                                     Initialize
+                                                                     the
+                                                                     GPRs
+   41    00000002 0021                  LDR     r1,=0
+   42    00000004 0022                  LDR     r2,=0
+   43    00000006 0023                  LDR     r3,=0
+   44    00000008 0024                  LDR     r4,=0
+   45    0000000A 0025                  LDR     r5,=0
+   46    0000000C 0026                  LDR     r6,=0
+   47    0000000E 0027                  LDR     r7,=0
+   48                           
+   49    00000010 62B6                  CPSIE   i                       ;
+                                                 Unmask interrupts
+   50                                   import start
+   51    00000012 ........              BL      start               ; call the
+                                                                     C
+                                                                     code
+   52                           __done
+   53    00000016 FEE7                  B       __done
+   54                           
+   55                                   END
+##############################
+#           CRC:0            #
+#        Errors:   0         #
+#        Warnings: 0         #
+#         Bytes: 24          #
+##############################
+
+
+
+

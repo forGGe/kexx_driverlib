@@ -1,0 +1,330 @@
+###############################################################################
+#
+# IAR ELF Linker V7.50.2.10312/W32 for ARM                23/Apr/2017  21:18:40
+# Copyright 2007-2015 IAR Systems AB.
+#
+#    Output file  =  
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Exe\PIT_demo_frdm.out
+#    Map file     =  
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\List\PIT_demo_frdm.map
+#    Command line =  
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\acmp.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\adc.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\alloc.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\arm_cm0.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\assert.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\crc.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\crt0.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\flash.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\ftm.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\gpio.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\i2c.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\ics.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\io.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\kbi.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\memtest.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\pit.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\PIT_demo.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\pmc.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\printf.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\queue.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\rtc.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\sim.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\spi.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\start.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\startup.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\stdlib.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\sysinit.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\systick.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\uart.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\uif.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\vectors.o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj\wdog.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Exe\PIT_demo_frdm.out
+#        --map
+#        F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\List\PIT_demo_frdm.map
+#        --config "F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\..\config
+#        files\KE0x_Flash_32K.icf" --semihosting --entry __iar_program_start
+#        --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"A2":  place at 0x00000410 { ro section .noinit };
+"P1":  place in [from 0x00000000 to 0x00007fff] { ro, block CodeRelocate };
+"P2":  place in [from 0x20000010 to 0x20000c00] {
+          rw, block CodeRelocateRam, block CSTACK, block HEAP };
+
+  Section          Kind        Address    Size  Object
+  -------          ----        -------    ----  ------
+"A1":                                     0xc0
+  .intvec          const    0x00000000    0xc0  vectors.o [1]
+                          - 0x000000c0    0xc0
+
+"P1", part 1 of 3:                         0x0
+  .rodata          const    0x000000c0     0x0  zero_init3.o [4]
+
+"P1", part 2 of 3:                         0x0
+  CodeRelocate              0x000000c0     0x0  <Block>
+
+Absolute sections:                        0x10
+  .rodata          const    0x00000400    0x10  vectors.o [1]
+                          - 0x00000410    0x10
+
+"A2":                                     0x18
+  .noinit          ro code  0x00000410    0x18  crt0.o [1]
+                          - 0x00000428    0x18
+
+"P1", part 3 of 3:                      0x1370
+  .text            ro code  0x00000428   0x4b8  printf.o [1]
+  .text            ro code  0x000008e0    0xe0  I32DivModFast.o [4]
+  .text            ro code  0x000009c0    0x1e  stdlib.o [1]
+  .text            ro code  0x000009e0     0x2  IntDivZer.o [4]
+  .text            ro code  0x000009e4   0x308  ics.o [1]
+  .text            ro code  0x00000cec   0x1b4  pit.o [1]
+  .text            ro code  0x00000ea0   0x1a8  sysinit.o [1]
+  .text            ro code  0x00001048    0x34  ABImemset.o [4]
+  .text            ro code  0x0000107c   0x144  sim.o [1]
+  .text            ro code  0x000011c0    0xdc  uart.o [1]
+  .text            ro code  0x0000129c    0x28  assert.o [1]
+  .text            ro code  0x000012c4    0xc4  PIT_demo.o [1]
+  .text            ro code  0x00001388    0xa0  startup.o [1]
+  .text            ro code  0x00001428     0xc  arm_cm0.o [1]
+  .text            ro code  0x00001434    0x58  wdog.o [1]
+  .rodata          const    0x0000148c    0x50  sysinit.o [1]
+  .text            ro code  0x000014dc    0x3c  zero_init3.o [4]
+  .rodata          const    0x00001518    0x34  uart.o [1]
+  .rodata          const    0x0000154c    0x30  vectors.o [1]
+  .text            ro code  0x0000157c    0x28  data_init.o [4]
+  .rodata          const    0x000015a4    0x24  assert.o [1]
+  .rodata          const    0x000015c8    0x24  sysinit.o [1]
+  .iar.init_table  const    0x000015ec    0x10  - Linker created -
+  .rodata          const    0x000015fc    0x20  PIT_demo.o [1]
+  .rodata          const    0x0000161c    0x20  sysinit.o [1]
+  .rodata          const    0x0000163c    0x20  sysinit.o [1]
+  .rodata          const    0x0000165c    0x1c  sysinit.o [1]
+  .text            ro code  0x00001678    0x1a  cmain.o [4]
+  .text            ro code  0x00001692     0x4  low_level_init.o [3]
+  .text            ro code  0x00001696     0x8  exit.o [3]
+  .text            ro code  0x000016a0     0xa  cexit.o [4]
+  .text            ro code  0x000016ac    0x14  exit.o [5]
+  .rodata          const    0x000016c0    0x18  sysinit.o [1]
+  .rodata          const    0x000016d8    0x18  sysinit.o [1]
+  .text            ro code  0x000016f0    0x18  vectors.o [1]
+  .rodata          const    0x00001708    0x14  sysinit.o [1]
+  .rodata          const    0x0000171c    0x14  sysinit.o [1]
+  .text            ro code  0x00001730    0x14  io.o [1]
+  .rodata          const    0x00001744    0x10  sysinit.o [1]
+  .text            ro code  0x00001754    0x10  start.o [1]
+  .rodata          const    0x00001764     0xc  sysinit.o [1]
+  .rodata          const    0x00001770     0xc  sysinit.o [1]
+  .rodata          const    0x0000177c     0xc  sysinit.o [1]
+  .text            ro code  0x00001788     0xc  cstartup_M.o [4]
+  .rodata          const    0x00001794     0x4  sim.o [1]
+                          - 0x00001798  0x1370
+
+"P2", part 1 of 2:                         0xc
+  .bss                      0x20000010     0xc  <Block>
+    .bss           zero     0x20000010     0x8  pit.o [1]
+    .bss           zero     0x20000018     0x2  sysinit.o [1]
+    .bss           zero     0x2000001a     0x2  sysinit.o [1]
+                          - 0x2000001c     0xc
+
+"P2", part 2 of 2:                         0x0
+  CodeRelocateRam           0x2000001c     0x0  <Block>
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xc:
+          0x20000010   0xc
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data  ro data
+                                                  (abs)
+    ------            -------  -------  -------  -------
+F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj: [1]
+    PIT_demo.o            196       32
+    arm_cm0.o              12
+    assert.o               40       36
+    crt0.o                 24
+    ics.o                 776
+    io.o                   20
+    pit.o                 436                 8
+    printf.o            1 208
+    sim.o                 324        4
+    start.o                16
+    startup.o             160
+    stdlib.o               30
+    sysinit.o             424      348        4
+    uart.o                220       52
+    vectors.o              24      240                16
+    wdog.o                 88
+    ----------------------------------------------------
+    Total:              3 998      712       12       16
+
+command line: [2]
+    ----------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                  8
+    low_level_init.o        4
+    ----------------------------------------------------
+    Total:                 12
+
+rt6M_tl.a: [4]
+    ABImemset.o            52
+    I32DivModFast.o       224
+    IntDivZer.o             2
+    cexit.o                10
+    cmain.o                26
+    cstartup_M.o           12
+    data_init.o            40
+    zero_init3.o           60
+    ----------------------------------------------------
+    Total:                426
+
+shb_l.a: [5]
+    exit.o                 20
+    ----------------------------------------------------
+    Total:                 20
+
+    Gaps                    8
+    Linker created                  16
+--------------------------------------------------------
+    Grand Total:        4 464      728       12       16
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.bss$$Base              0x20000010          --   Gb  - Linker created -
+.bss$$Limit             0x2000001c          --   Gb  - Linker created -
+.data$$Base             0x00000000          --   Gb  - Linker created -
+.data_init$$Base        0x00000000          --   Gb  - Linker created -
+.data_init$$Limit       0x00000000          --   Gb  - Linker created -
+.iar.init_table$$Base   0x000015ec          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x000015fc          --   Gb  - Linker created -
+?main                   0x00001679         Code  Gb  cmain.o [4]
+ASSERT_FAILED_STR       0x000015a4   0x24  Data  Gb  assert.o [1]
+CodeRelocate$$Base      0x000000c0          --   Gb  - Linker created -
+CodeRelocate$$Limit     0x000000c0          --   Gb  - Linker created -
+CodeRelocateRam$$Base   0x2000001c          --   Gb  - Linker created -
+CodeRelocateRam$$Limit  0x2000001c          --   Gb  - Linker created -
+FEI_to_FBE_OSC          0x00000a41   0x80  Code  Gb  ics.o [1]
+FEI_to_FEE              0x000009e5   0x5c  Code  Gb  ics.o [1]
+FEI_to_FEE_OSC          0x00000ac1   0x5c  Code  Gb  ics.o [1]
+ICS_Init                0x00000bdd   0x64  Code  Gb  ics.o [1]
+ICS_SetClkDivider       0x00000b59   0x84  Code  Gb  ics.o [1]
+ICS_Trim                0x00000b2d   0x2a  Code  Gb  ics.o [1]
+NVIC_DisableIRQ         0x00000cfb    0xe  Code  Lc  pit.o [1]
+NVIC_EnableIRQ          0x00000ced    0xe  Code  Lc  pit.o [1]
+OSC_Init                0x00000c41   0x8c  Code  Gb  ics.o [1]
+PIT_Callback            0x20000010    0x8  Data  Gb  pit.o [1]
+PIT_Ch0Isr              0x00000e57   0x18  Code  Gb  pit.o [1]
+PIT_Ch1Isr              0x00000e6f   0x18  Code  Gb  pit.o [1]
+PIT_ChannelClrFlags     0x00000d7f   0x1e  Code  Lc  pit.o [1]
+PIT_ChannelEnable       0x00000d25   0x1e  Code  Lc  pit.o [1]
+PIT_ChannelEnableChain  0x00000d61   0x1e  Code  Lc  pit.o [1]
+PIT_ChannelEnableInt    0x00000d43   0x1e  Code  Lc  pit.o [1]
+PIT_Enable              0x00000d09    0xe  Code  Lc  pit.o [1]
+PIT_Init                0x00000d9d   0xa2  Code  Gb  pit.o [1]
+PIT_SetCallback         0x00000e4b    0xc  Code  Gb  pit.o [1]
+PIT_SetDebugFreeze      0x00000d17    0xe  Code  Lc  pit.o [1]
+PIT_SetLoadVal          0x00000e3f    0xc  Code  Gb  pit.o [1]
+PIT_Task                0x00001367    0xa  Code  Gb  PIT_demo.o [1]
+Region$$Table$$Base     0x000015ec          --   Gb  - Linker created -
+Region$$Table$$Limit    0x000015fc          --   Gb  - Linker created -
+SIM_GetStatus           0x0000117f    0x8  Code  Gb  sim.o [1]
+SIM_Init                0x0000107d  0x102  Code  Gb  sim.o [1]
+SIM_ReadID              0x00001187   0x20  Code  Gb  sim.o [1]
+UART_GetChar            0x00001255   0x28  Code  Gb  uart.o [1]
+UART_Init               0x000011c1   0x94  Code  Gb  uart.o [1]
+UART_InitPrint          0x00000fe7   0x16  Code  Gb  sysinit.o [1]
+UART_PutChar            0x0000127d    0xc  Code  Gb  uart.o [1]
+WDOG_DisableWDOGEnableUpdate
+                        0x00001435   0x3c  Code  Gb  wdog.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                        0x20000bf8          --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x1ffffc00          --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x00000000          --   Gb  command line/config [2]
+__aeabi_idiv            0x0000090d         Code  Gb  I32DivModFast.o [4]
+__aeabi_idiv0           0x000009e1         Code  Gb  IntDivZer.o [4]
+__aeabi_idivmod         0x0000090d         Code  Gb  I32DivModFast.o [4]
+__aeabi_memclr4         0x00001079         Code  Gb  ABImemset.o [4]
+__aeabi_memclr8         0x00001079         Code  Gb  ABImemset.o [4]
+__aeabi_uidiv           0x00000913         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod        0x00000913         Code  Gb  I32DivModFast.o [4]
+__cmain                 0x00001679         Code  Gb  cmain.o [4]
+__exit                  0x000016ad   0x14  Code  Gb  exit.o [5]
+__flash_config          0x00000400   0x10  Data  Gb  vectors.o [1]
+__iar_Memset4_word      0x00001049         Code  Gb  ABImemset.o [4]
+__iar_data_init3        0x0000157d   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x00001789         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x000014dd   0x3c  Code  Gb  zero_init3.o [4]
+__low_level_init        0x00001693    0x4  Code  Gb  low_level_init.o [3]
+__startup               0x00000411         Code  Gb  crt0.o [1]
+__vector_table          0x00000000   0xc0  Data  Gb  vectors.o [1]
+_call_main              0x00001685         Code  Gb  cmain.o [4]
+_exit                   0x000016a1         Code  Gb  cexit.o [4]
+_main                   0x0000168f         Code  Gb  cmain.o [4]
+assert_failed           0x0000129d   0x28  Code  Gb  assert.o [1]
+common_startup          0x00001389   0xa0  Code  Gb  startup.o [1]
+default_isr             0x000016f1    0xe  Code  Gb  vectors.o [1]
+exit                    0x00001697    0x8  Code  Gb  exit.o [3]
+global_fail_count       0x2000001a    0x2  Data  Gb  sysinit.o [1]
+global_pass_count       0x20000018    0x2  Data  Gb  sysinit.o [1]
+main                    0x000012c5   0xa2  Code  Gb  PIT_demo.o [1]
+out_char                0x00001731    0xe  Code  Gb  io.o [1]
+print_sys_log           0x00000f11   0xd6  Code  Gb  sysinit.o [1]
+printf                  0x000008bd   0x1e  Code  Gb  printf.o [1]
+printk                  0x0000050f  0x3ae  Code  Gb  printf.o [1]
+printk_mknumstr         0x00000455   0x7e  Code  Lc  printf.o [1]
+printk_pad_space        0x000004f1   0x1e  Code  Lc  printf.o [1]
+printk_pad_zero         0x000004d3   0x1e  Code  Lc  printf.o [1]
+printk_putc             0x00000429   0x2c  Code  Lc  printf.o [1]
+start                   0x00001755   0x10  Code  Gb  start.o [1]
+strlen                  0x000009c1   0x1e  Code  Gb  stdlib.o [1]
+sysinit                 0x00000ea1   0x70  Code  Gb  sysinit.o [1]
+write_vtor              0x00001429    0x6  Code  Gb  arm_cm0.o [1]
+
+
+[1] = F:\levaux\KEXX_DRV_LIB_OLD\build\iar\ke02\PIT_demo\FLASH_32KB_PFLASH\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  4 464 bytes of readonly  code memory
+    728 bytes of readonly  data memory (+ 16 absolute)
+     12 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
