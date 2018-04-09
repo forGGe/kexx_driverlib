@@ -46,8 +46,8 @@ typedef unsigned short  word;
  * Debug prints ON (#define) or OFF (#undef)
  */
 
-#define DEBUG
-#define DEBUG_PRINT
+#define DEBUG 1
+#define DEBUG_PRINT 1
 
 /* 
  * Include the generic CPU header file 
